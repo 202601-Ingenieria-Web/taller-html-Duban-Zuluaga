@@ -1,0 +1,248 @@
+/* Se usa CSS anidado para mejorar la expecificidad de las clases y mejorar la lectura */
+
+/* Colores como variables*/
+:root {
+  --background-primary: #432dd7;
+  --card-bg: #4a4a4a;
+  --color-secundary: #c1d72d;
+  --color-white: #EEEEEE;
+}
+
+/* Quita los estilos por defecto del navegador */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+  /* Genera el degradado */
+  background: linear-gradient(105deg, var(--card-bg) 0%, var(--background-primary) 100%);
+  color: var(--color-white);
+  padding: 1.5rem 0;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Estilos para el mensaje de error */
+.p_error {
+  text-align: center;
+  font-size: 1.25rem;
+  color: brown;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  color: var(--color-white);
+  background-color: var(--background-primary);
+  border-radius: 5px;
+  border: 1px solid var(--background-primary);
+}
+
+.btn:hover {
+  color: var(--background-primary);
+  background-color: var(--color-white);
+  cursor: pointer;
+}
+
+/* Estilos para el formulario de ingreso de datos */
+.formSearch {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+
+  input {
+    max-width: 300px;
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+}
+
+/* Estilos de las tarjeas individuales */
+.mini-card {
+  width: 300px;
+  border-radius: 5px;
+  color: var(--color-white);
+  background-color: var(--card-bg);
+  overflow: hidden;
+
+  .content {
+    padding: 0 1rem;
+  }
+
+  img {
+    border-top: 55px;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+
+      svg {
+        color: var(--color-secundary);
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 0.75rem 0;
+  }
+}
+
+/* Estilos para la grilla que contiene las tarjetas de los personajes */
+.cards-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* Estilos del modal */
+dialog {
+  border: none;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.modal::backdrop {
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.modal-container {
+  margin: 0;
+  padding: 0;
+
+  .closeModal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 32px;
+    height: 32px;
+    color: var(--background-primary);
+  }
+
+  svg:hover {
+    transform: scale(1.35) rotate(45deg);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    background-color: var(--background-primary);
+    color: #FFFFFF;
+    border-radius: 50%;
+  }
+
+  .modal-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      width: 450px;
+      height: 450px;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 0;
+      font-size: 2rem;
+    }
+
+    div {
+      padding: 0 2rem;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.95rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 1.25rem;
+
+      svg {
+        padding: 0.25rem;
+        background-color: var(--card-bg);
+        border-radius: 50%;
+      }
+    }
+
+    span {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+/* Estilos del footer*/
+footer {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  background-color: var(--card-bg);
+  margin-top: 2rem;
+
+  a {
+    text-decoration: none;
+    color: var(--color-white);
+  }
+
+  a:hover {
+    color: var(--color-secundary);
+  }
+}
+
+/* Responsive de el modal */
+@media (max-width: 800px) {
+  .modal-container {
+    width: 100%;
+
+    .closeModal {
+      color: var(--color-white);
+      background-color: var(--background-primary);
+      border-radius: 50%;
+      width: 38px;
+      height: 38px;
+    }
+
+    .modal-info {
+      flex-direction: column;
+
+      h2 {
+        margin-top: 1rem;
+      }
+
+      div {
+        padding: 0 1rem;
+      }
+    }
+  }
+}
