@@ -13,7 +13,7 @@ Se optó por utilizar una arquitectura basada en componentes, lo que permite:
 * **Separación de responsabilidades**: Lógica de datos (Services) separada de la interfaz de usuario (Componentes).
 
 
-![Banner del Proyecto](./public/image-1.png)
+![Banner del Proyecto](./public/image-2.png)
 
 ### 🚀 Características
 
