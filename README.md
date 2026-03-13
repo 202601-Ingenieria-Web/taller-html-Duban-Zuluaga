@@ -6,11 +6,11 @@ Una aplicación web moderna y rápida construida con HTML, CSS, Vanilla JavaScri
 
 Se optó por utilizar una arquitectura basada en componentes, lo que permite:
 
-    - Mantenibilidad: Código fácil de leer y corregir.
+* **Mantenibilidad**: Código fácil de leer y corregir.
 
-    - Reutilización: Componentes independientes que se pueden usar en distintas partes de la app.
+* **Reutilización**: Componentes independientes que se pueden usar en distintas partes de la app.
 
-    - Separación de responsabilidades: Lógica de datos (Services) separada de la interfaz de usuario (Componentes).
+* **Separación de responsabilidades**: Lógica de datos (Services) separada de la interfaz de usuario (Componentes).
 
 
 ![Banner del Proyecto](./public/image-1.png)
