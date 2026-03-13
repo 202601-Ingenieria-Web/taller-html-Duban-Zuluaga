@@ -2,6 +2,13 @@
 # 🛸 Rick and Morty - Explorador de Personajes
 
 Una aplicación web moderna y rápida construida con HTML, CSS, Vanilla JavaScript y Vite, que consume la API de Rick and Morty para explorar sus personajes.
+
+### 🚀 Demo
+
+Puedes ver la aplicación funcionando :
+
+[🔗 Ver Demo en Vivo](https://202601-ingenieria-web.github.io/taller-html-Duban-Zuluaga/)
+
 ### 🏗️ Arquitectura
 
 Se optó por utilizar una arquitectura basada en componentes, lo que permite:
